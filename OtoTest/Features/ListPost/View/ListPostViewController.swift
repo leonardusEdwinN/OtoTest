@@ -12,8 +12,13 @@ import UIKit
 class ListPostViewController : UIViewController{
     @IBOutlet weak var navigationView: UIView!
     @IBOutlet weak var listPosttableView: UITableView!
+    @IBOutlet weak var addPostButton: UIButton!
     
+    @IBAction func addPostButtonPressed(_ sender: Any) {
+        
+    }
     var listPostVM = ListPostViewModel()
+    var selectedIndex : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +40,17 @@ class ListPostViewController : UIViewController{
             DispatchQueue.main.async {
                 self.listPosttableView.reloadData()
                 LoadingScreen.sharedInstance.hideIndicator()
+            }
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPostDetail"{
+            if let destVC = segue.destination as? PostViewController {
+                
+                let listPostVM = listPostVM.modelAt(self.selectedIndex)
+                destVC.postData = listPostVM.item
             }
         }
     }
@@ -70,6 +86,8 @@ extension ListPostViewController : UITableViewDelegate, UITableViewDataSource{
             if let deletePost = self?.listPostVM.modelAt(indexPath.row){
                 print("DELETED")
             }
+            
+            
 
             
             completionHandler(true)
@@ -81,6 +99,12 @@ extension ListPostViewController : UITableViewDelegate, UITableViewDataSource{
         let configuration = UISwipeActionsConfiguration(actions: [delete])
 
         return configuration
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        
+        self.performSegue(withIdentifier: "goToPostDetail", sender: ListPostViewController.self)
     }
     
     

@@ -18,8 +18,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csx-Au-tde">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0f9-0M-7sd">
+                                        <rect key="frame" x="355.5" y="9.5" width="43.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                        <connections>
+                                            <action selector="addPostButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="y92-qv-Cxk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0f9-0M-7sd" secondAttribute="trailing" constant="15" id="Rds-5l-CdW"/>
+                                    <constraint firstItem="0f9-0M-7sd" firstAttribute="centerY" secondItem="csx-Au-tde" secondAttribute="centerY" id="Z8K-tr-JSs"/>
                                     <constraint firstAttribute="height" constant="50" id="hts-QZ-KmJ"/>
                                 </constraints>
                             </view>
@@ -41,16 +53,29 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addPostButton" destination="0f9-0M-7sd" id="p0Y-Vk-d1Y"/>
                         <outlet property="listPosttableView" destination="PwM-nh-nmD" id="Lg1-NG-hj8"/>
                         <outlet property="navigationView" destination="csx-Au-tde" id="B0E-qa-AA6"/>
+                        <segue destination="PW2-hG-YHJ" kind="show" identifier="goToPostDetail" id="HR3-9s-OTy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="121"/>
         </scene>
+        <!--PostDetailVC-->
+        <scene sceneID="Z6d-kd-pF6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Post" referencedIdentifier="PostDetailVC" id="PW2-hG-YHJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j8h-AJ-IIM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCt-11-wz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="58"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

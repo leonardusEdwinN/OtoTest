@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post View Controller-->
+        <scene sceneID="mO1-we-Mfm">
+            <objects>
+                <viewController storyboardIdentifier="PostDetailVC" id="W2X-mB-vAO" customClass="PostViewController" customModule="OtoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TIq-hl-o3f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yp2-hO-4kb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCT-6H-yn5">
+                                        <rect key="frame" x="15" y="9.5" width="73" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" title=" Back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="W2X-mB-vAO" eventType="touchUpInside" id="a3u-ay-2u5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="VCT-6H-yn5" firstAttribute="centerY" secondItem="yp2-hO-4kb" secondAttribute="centerY" id="Pet-eL-E1C"/>
+                                    <constraint firstItem="VCT-6H-yn5" firstAttribute="leading" secondItem="yp2-hO-4kb" secondAttribute="leading" constant="15" id="Rsc-Vl-11w"/>
+                                    <constraint firstAttribute="height" constant="50" id="xvy-87-2Ec"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-Y0-c6j">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgc-j7-OzZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="205.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Self-proclaimed bitcoin creator hails court victory - Reuters.com" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-XF-Soy">
+                                                <rect key="frame" x="10" y="15" width="394" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="Q48-PQ-cDq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021-12-09T21:49:26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnS-EU-lqZ">
+                                                <rect key="frame" x="10" y="95" width="394" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="nvS-R4-vyO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemGray4Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o4-0H-mXR">
+                                                <rect key="frame" x="10" y="125" width="394" height="65.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="250" constant="50" id="Jo1-6d-Ziu"/>
+                                                </constraints>
+                                                <string key="text">Bringing holiday joy to that special DIYer in your with the gift of a tool is a tricky proposition. Picking something that will truly be useful to the recipient while maintaining a sense of surprise … [+4600 chars]</string>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Oov-XF-Soy" secondAttribute="trailing" constant="10" id="4mj-Sz-6Bs"/>
+                                            <constraint firstAttribute="bottom" secondItem="7o4-0H-mXR" secondAttribute="bottom" constant="15" id="FK1-Fq-utD"/>
+                                            <constraint firstItem="7o4-0H-mXR" firstAttribute="top" secondItem="pnS-EU-lqZ" secondAttribute="bottom" constant="10" id="PeY-OJ-FQN"/>
+                                            <constraint firstItem="pnS-EU-lqZ" firstAttribute="leading" secondItem="qgc-j7-OzZ" secondAttribute="leading" constant="10" id="TJ7-l8-01M"/>
+                                            <constraint firstItem="Oov-XF-Soy" firstAttribute="top" secondItem="qgc-j7-OzZ" secondAttribute="top" constant="15" id="czB-Mv-KkP"/>
+                                            <constraint firstItem="pnS-EU-lqZ" firstAttribute="top" secondItem="Oov-XF-Soy" secondAttribute="bottom" constant="5" id="dMY-eo-bDx"/>
+                                            <constraint firstItem="7o4-0H-mXR" firstAttribute="leading" secondItem="qgc-j7-OzZ" secondAttribute="leading" constant="10" id="emD-Gf-3xj"/>
+                                            <constraint firstAttribute="trailing" secondItem="7o4-0H-mXR" secondAttribute="trailing" constant="10" id="kn7-bk-Rqk"/>
+                                            <constraint firstAttribute="trailing" secondItem="pnS-EU-lqZ" secondAttribute="trailing" constant="10" id="sf3-fV-8j8"/>
+                                            <constraint firstItem="Oov-XF-Soy" firstAttribute="leading" secondItem="qgc-j7-OzZ" secondAttribute="leading" constant="10" id="zTY-iV-QXR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qgc-j7-OzZ" secondAttribute="bottom" constant="12" id="TWF-yh-cYo"/>
+                                    <constraint firstItem="qgc-j7-OzZ" firstAttribute="height" secondItem="6HS-Y0-c6j" secondAttribute="height" priority="250" id="Uch-16-uqy"/>
+                                    <constraint firstAttribute="trailing" secondItem="qgc-j7-OzZ" secondAttribute="trailing" id="glG-T6-rj2"/>
+                                    <constraint firstItem="qgc-j7-OzZ" firstAttribute="width" secondItem="6HS-Y0-c6j" secondAttribute="width" id="oZU-mh-nZl"/>
+                                    <constraint firstItem="qgc-j7-OzZ" firstAttribute="top" secondItem="6HS-Y0-c6j" secondAttribute="top" id="tMv-Ix-RmU"/>
+                                    <constraint firstItem="qgc-j7-OzZ" firstAttribute="leading" secondItem="6HS-Y0-c6j" secondAttribute="leading" id="uXi-Xd-mdd"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4SP-VP-Izp"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vqh-fZ-Xp0"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kZK-7P-0oQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yp2-hO-4kb" firstAttribute="leading" secondItem="kZK-7P-0oQ" secondAttribute="leading" id="5jW-Ju-l6G"/>
+                            <constraint firstItem="6HS-Y0-c6j" firstAttribute="bottom" secondItem="kZK-7P-0oQ" secondAttribute="bottom" id="LxO-Xa-0EA"/>
+                            <constraint firstItem="kZK-7P-0oQ" firstAttribute="trailing" secondItem="6HS-Y0-c6j" secondAttribute="trailing" id="Tad-J4-phK"/>
+                            <constraint firstItem="yp2-hO-4kb" firstAttribute="top" secondItem="kZK-7P-0oQ" secondAttribute="top" id="cDT-06-1NQ"/>
+                            <constraint firstItem="6HS-Y0-c6j" firstAttribute="leading" secondItem="kZK-7P-0oQ" secondAttribute="leading" id="hX8-Kc-WuB"/>
+                            <constraint firstItem="6HS-Y0-c6j" firstAttribute="top" secondItem="yp2-hO-4kb" secondAttribute="bottom" id="m4e-nE-89B"/>
+                            <constraint firstItem="yp2-hO-4kb" firstAttribute="trailing" secondItem="kZK-7P-0oQ" secondAttribute="trailing" id="wUi-BG-fYv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lfc-Ut-DSp"/>
+                    <connections>
+                        <outlet property="backButton" destination="VCT-6H-yn5" id="gvQ-Nk-Den"/>
+                        <outlet property="navigationView" destination="yp2-hO-4kb" id="7YL-5x-mIQ"/>
+                        <outlet property="postContent" destination="7o4-0H-mXR" id="9Xn-6Y-Ioi"/>
+                        <outlet property="postPublishedAt" destination="pnS-EU-lqZ" id="Q5a-WL-xXS"/>
+                        <outlet property="postTitle" destination="Oov-XF-Soy" id="ZIK-uF-3xh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELv-JW-r9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
