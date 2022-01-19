@@ -17,6 +17,18 @@
 		138B015F2797B67D008F558A /* OtoTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */; };
 		138B016E2797B776008F558A /* ListPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B016D2797B776008F558A /* ListPost.storyboard */; };
 		138B01702797B995008F558A /* ListPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B016F2797B995008F558A /* ListPostViewController.swift */; };
+		138B01762797BDA3008F558A /* ListPostItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01742797BDA3008F558A /* ListPostItemTableViewCell.swift */; };
+		138B01772797BDA3008F558A /* ListPostItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138B01752797BDA3008F558A /* ListPostItemTableViewCell.xib */; };
+		138B01792797C018008F558A /* ListPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01782797C018008F558A /* ListPostViewModel.swift */; };
+		138B017D2797C04A008F558A /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B017B2797C04A008F558A /* LoadingScreen.swift */; };
+		138B017E2797C04A008F558A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B017C2797C04A008F558A /* Constants.swift */; };
+		138B01812797C06B008F558A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01802797C06B008F558A /* WebService.swift */; };
+		138B01842797C0C3008F558A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01832797C0C3008F558A /* String+Extensions.swift */; };
+		138B01892797C116008F558A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01882797C116008F558A /* Post.swift */; };
+		138B01932797D52C008F558A /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B01912797D52C008F558A /* Post.storyboard */; };
+		138B01942797D52C008F558A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01922797D52C008F558A /* PostViewController.swift */; };
+		138B01992797E338008F558A /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01982797E338008F558A /* CreatePostViewController.swift */; };
+		138B019B2797E35D008F558A /* CreatePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B019A2797E35D008F558A /* CreatePost.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,18 @@
 		138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtoTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		138B016D2797B776008F558A /* ListPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListPost.storyboard; sourceTree = "<group>"; };
 		138B016F2797B995008F558A /* ListPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewController.swift; sourceTree = "<group>"; };
+		138B01742797BDA3008F558A /* ListPostItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostItemTableViewCell.swift; sourceTree = "<group>"; };
+		138B01752797BDA3008F558A /* ListPostItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostItemTableViewCell.xib; sourceTree = "<group>"; };
+		138B01782797C018008F558A /* ListPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewModel.swift; sourceTree = "<group>"; };
+		138B017B2797C04A008F558A /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		138B017C2797C04A008F558A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		138B01802797C06B008F558A /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		138B01832797C0C3008F558A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		138B01882797C116008F558A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		138B01912797D52C008F558A /* Post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		138B01922797D52C008F558A /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		138B01982797E338008F558A /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		138B019A2797E35D008F558A /* CreatePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatePost.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,9 @@
 		138B01372797B67B008F558A /* OtoTest */ = {
 			isa = PBXGroup;
 			children = (
+				138B01822797C0B3008F558A /* Extensions */,
+				138B017F2797C05A008F558A /* Services */,
+				138B017A2797C040008F558A /* Utils */,
 				138B016B2797B73B008F558A /* Features */,
 				138B01382797B67B008F558A /* AppDelegate.swift */,
 				138B013A2797B67B008F558A /* SceneDelegate.swift */,
@@ -132,6 +159,8 @@
 		138B016B2797B73B008F558A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				138B01962797E2FB008F558A /* Create */,
+				138B018B2797C5EA008F558A /* Post */,
 				138B016C2797B741008F558A /* ListPost */,
 			);
 			path = Features;
@@ -140,10 +169,9 @@
 		138B016C2797B741008F558A /* ListPost */ = {
 			isa = PBXGroup;
 			children = (
+				138B01852797C0E4008F558A /* Model */,
 				138B01722797BAD8008F558A /* View */,
 				138B01712797BAD3008F558A /* ViewModel */,
-				138B016D2797B776008F558A /* ListPost.storyboard */,
-				138B016F2797B995008F558A /* ListPostViewController.swift */,
 			);
 			path = ListPost;
 			sourceTree = "<group>";
@@ -151,6 +179,7 @@
 		138B01712797BAD3008F558A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				138B01782797C018008F558A /* ListPostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,6 +187,101 @@
 		138B01722797BAD8008F558A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				138B016F2797B995008F558A /* ListPostViewController.swift */,
+				138B016D2797B776008F558A /* ListPost.storyboard */,
+				138B01732797BD7D008F558A /* CustomCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		138B01732797BD7D008F558A /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				138B01742797BDA3008F558A /* ListPostItemTableViewCell.swift */,
+				138B01752797BDA3008F558A /* ListPostItemTableViewCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		138B017A2797C040008F558A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				138B017C2797C04A008F558A /* Constants.swift */,
+				138B017B2797C04A008F558A /* LoadingScreen.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		138B017F2797C05A008F558A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				138B01802797C06B008F558A /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		138B01822797C0B3008F558A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				138B01832797C0C3008F558A /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		138B01852797C0E4008F558A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		138B018B2797C5EA008F558A /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				138B018E2797C613008F558A /* Model */,
+				138B018D2797C5FC008F558A /* ViewModel */,
+				138B018C2797C5F8008F558A /* View */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		138B018C2797C5F8008F558A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				138B01912797D52C008F558A /* Post.storyboard */,
+				138B01922797D52C008F558A /* PostViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		138B018D2797C5FC008F558A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		138B018E2797C613008F558A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				138B01882797C116008F558A /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		138B01962797E2FB008F558A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				138B01972797E31A008F558A /* View */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		138B01972797E31A008F558A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				138B01982797E338008F558A /* CreatePostViewController.swift */,
+				138B019A2797E35D008F558A /* CreatePost.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,8 +390,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138B019B2797E35D008F558A /* CreatePost.storyboard in Resources */,
 				138B016E2797B776008F558A /* ListPost.storyboard in Resources */,
 				138B01482797B67D008F558A /* LaunchScreen.storyboard in Resources */,
+				138B01932797D52C008F558A /* Post.storyboard in Resources */,
+				138B01772797BDA3008F558A /* ListPostItemTableViewCell.xib in Resources */,
 				138B01452797B67D008F558A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +420,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138B01842797C0C3008F558A /* String+Extensions.swift in Sources */,
+				138B01812797C06B008F558A /* WebService.swift in Sources */,
 				138B01702797B995008F558A /* ListPostViewController.swift in Sources */,
+				138B01892797C116008F558A /* Post.swift in Sources */,
+				138B01992797E338008F558A /* CreatePostViewController.swift in Sources */,
+				138B017D2797C04A008F558A /* LoadingScreen.swift in Sources */,
 				138B01392797B67B008F558A /* AppDelegate.swift in Sources */,
 				138B01432797B67B008F558A /* OtoTest.xcdatamodeld in Sources */,
 				138B013B2797B67B008F558A /* SceneDelegate.swift in Sources */,
+				138B01792797C018008F558A /* ListPostViewModel.swift in Sources */,
+				138B01942797D52C008F558A /* PostViewController.swift in Sources */,
+				138B01762797BDA3008F558A /* ListPostItemTableViewCell.swift in Sources */,
+				138B017E2797C04A008F558A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
