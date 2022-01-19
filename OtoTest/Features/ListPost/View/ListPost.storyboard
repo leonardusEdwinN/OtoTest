@@ -28,7 +28,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0f9-0M-7sd" secondAttribute="trailing" constant="15" id="Rds-5l-CdW"/>
                                     <constraint firstItem="0f9-0M-7sd" firstAttribute="centerY" secondItem="csx-Au-tde" secondAttribute="centerY" id="Z8K-tr-JSs"/>
@@ -57,11 +57,22 @@
                         <outlet property="listPosttableView" destination="PwM-nh-nmD" id="Lg1-NG-hj8"/>
                         <outlet property="navigationView" destination="csx-Au-tde" id="B0E-qa-AA6"/>
                         <segue destination="PW2-hG-YHJ" kind="show" identifier="goToPostDetail" id="HR3-9s-OTy"/>
+                        <segue destination="dSU-qX-W0S" kind="show" identifier="goToCreatePost" id="tQ6-6n-qRt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+        <!--CreatePostVC-->
+        <scene sceneID="Af5-DZ-8Yl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreatePost" referencedIdentifier="CreatePostVC" id="dSU-qX-W0S" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qd8-Kd-PEC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5j7-AU-kcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="-55"/>
         </scene>
         <!--PostDetailVC-->
         <scene sceneID="Z6d-kd-pF6">
@@ -78,9 +89,6 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
