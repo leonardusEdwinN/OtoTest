@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		138B01392797B67B008F558A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01382797B67B008F558A /* AppDelegate.swift */; };
 		138B013B2797B67B008F558A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B013A2797B67B008F558A /* SceneDelegate.swift */; };
-		138B013D2797B67B008F558A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B013C2797B67B008F558A /* ViewController.swift */; };
-		138B01402797B67B008F558A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B013E2797B67B008F558A /* Main.storyboard */; };
 		138B01432797B67B008F558A /* OtoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 138B01412797B67B008F558A /* OtoTest.xcdatamodeld */; };
 		138B01452797B67D008F558A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138B01442797B67D008F558A /* Assets.xcassets */; };
 		138B01482797B67D008F558A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B01462797B67D008F558A /* LaunchScreen.storyboard */; };
 		138B01532797B67D008F558A /* OtoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01522797B67D008F558A /* OtoTestTests.swift */; };
 		138B015D2797B67D008F558A /* OtoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B015C2797B67D008F558A /* OtoTestUITests.swift */; };
 		138B015F2797B67D008F558A /* OtoTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */; };
+		138B016E2797B776008F558A /* ListPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B016D2797B776008F558A /* ListPost.storyboard */; };
+		138B01702797B995008F558A /* ListPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B016F2797B995008F558A /* ListPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,6 @@
 		138B01352797B67B008F558A /* OtoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138B01382797B67B008F558A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138B013A2797B67B008F558A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		138B013C2797B67B008F558A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		138B013F2797B67B008F558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		138B01422797B67B008F558A /* OtoTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OtoTest.xcdatamodel; sourceTree = "<group>"; };
 		138B01442797B67D008F558A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138B01472797B67D008F558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		138B01582797B67D008F558A /* OtoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		138B015C2797B67D008F558A /* OtoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtoTestUITests.swift; sourceTree = "<group>"; };
 		138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtoTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		138B016D2797B776008F558A /* ListPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListPost.storyboard; sourceTree = "<group>"; };
+		138B016F2797B995008F558A /* ListPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,9 @@
 		138B01372797B67B008F558A /* OtoTest */ = {
 			isa = PBXGroup;
 			children = (
+				138B016B2797B73B008F558A /* Features */,
 				138B01382797B67B008F558A /* AppDelegate.swift */,
 				138B013A2797B67B008F558A /* SceneDelegate.swift */,
-				138B013C2797B67B008F558A /* ViewController.swift */,
-				138B013E2797B67B008F558A /* Main.storyboard */,
 				138B01442797B67D008F558A /* Assets.xcassets */,
 				138B01462797B67D008F558A /* LaunchScreen.storyboard */,
 				138B01492797B67D008F558A /* Info.plist */,
@@ -128,6 +127,39 @@
 				138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */,
 			);
 			path = OtoTestUITests;
+			sourceTree = "<group>";
+		};
+		138B016B2797B73B008F558A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				138B016C2797B741008F558A /* ListPost */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		138B016C2797B741008F558A /* ListPost */ = {
+			isa = PBXGroup;
+			children = (
+				138B01722797BAD8008F558A /* View */,
+				138B01712797BAD3008F558A /* ViewModel */,
+				138B016D2797B776008F558A /* ListPost.storyboard */,
+				138B016F2797B995008F558A /* ListPostViewController.swift */,
+			);
+			path = ListPost;
+			sourceTree = "<group>";
+		};
+		138B01712797BAD3008F558A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		138B01722797BAD8008F558A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138B016E2797B776008F558A /* ListPost.storyboard in Resources */,
 				138B01482797B67D008F558A /* LaunchScreen.storyboard in Resources */,
 				138B01452797B67D008F558A /* Assets.xcassets in Resources */,
-				138B01402797B67B008F558A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138B013D2797B67B008F558A /* ViewController.swift in Sources */,
+				138B01702797B995008F558A /* ListPostViewController.swift in Sources */,
 				138B01392797B67B008F558A /* AppDelegate.swift in Sources */,
 				138B01432797B67B008F558A /* OtoTest.xcdatamodeld in Sources */,
 				138B013B2797B67B008F558A /* SceneDelegate.swift in Sources */,
@@ -301,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		138B013E2797B67B008F558A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				138B013F2797B67B008F558A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		138B01462797B67D008F558A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +472,8 @@
 				INFOPLIST_FILE = OtoTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ListPost;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,7 +501,8 @@
 				INFOPLIST_FILE = OtoTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ListPost;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
