@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Post View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreatePostVC" id="Y6W-OH-hqX" customClass="CreatePostViewController" customModule="OtoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-w2-giq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wir-LN-0Sp">
+                                        <rect key="frame" x="162.5" y="14.5" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edd-Pf-Nou">
+                                        <rect key="frame" x="15" y="9.5" width="73" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" title=" Back"/>
+                                        <connections>
+                                            <action selector="buttonBackPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sfA-IY-xNt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2cf-BJ-onB"/>
+                                    <constraint firstItem="Wir-LN-0Sp" firstAttribute="centerY" secondItem="VUG-w2-giq" secondAttribute="centerY" id="4Vy-nb-qKM"/>
+                                    <constraint firstItem="Wir-LN-0Sp" firstAttribute="centerX" secondItem="VUG-w2-giq" secondAttribute="centerX" id="No1-bS-68t"/>
+                                    <constraint firstItem="edd-Pf-Nou" firstAttribute="centerY" secondItem="VUG-w2-giq" secondAttribute="centerY" id="Uyd-vp-AUP"/>
+                                    <constraint firstItem="edd-Pf-Nou" firstAttribute="leading" secondItem="VUG-w2-giq" secondAttribute="leading" constant="15" id="tnc-RF-DCB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Title : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-hc-OEa">
+                                <rect key="frame" x="10" y="109" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Post Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFS-71-tbb">
+                                <rect key="frame" x="10" y="140" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Content : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXn-bI-mmt">
+                                <rect key="frame" x="10" y="189" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Post Content" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-xR-MfX">
+                                <rect key="frame" x="10" y="220" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zF-Rx-sGE">
+                                <rect key="frame" x="15" y="807" width="384" height="40"/>
+                                <color key="backgroundColor" red="0.027450980390000001" green="0.24313725489999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eFH-bv-QYC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Post"/>
+                                <connections>
+                                    <action selector="buttonCreatePostPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5rb-JJ-jIw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VUG-w2-giq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1kY-gG-FWo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jNV-hc-OEa" secondAttribute="trailing" constant="10" id="5si-5b-9CM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YFS-71-tbb" secondAttribute="trailing" constant="10" id="91T-On-hla"/>
+                            <constraint firstItem="JXn-bI-mmt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="HgD-Rx-6x8"/>
+                            <constraint firstItem="hvb-xR-MfX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Ii4-AM-rDo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hvb-xR-MfX" secondAttribute="trailing" constant="10" id="Jjk-pC-L5n"/>
+                            <constraint firstItem="jNV-hc-OEa" firstAttribute="top" secondItem="VUG-w2-giq" secondAttribute="bottom" constant="15" id="JmW-LM-DV1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2zF-Rx-sGE" secondAttribute="trailing" constant="15" id="KEe-Ap-Zas"/>
+                            <constraint firstItem="JXn-bI-mmt" firstAttribute="top" secondItem="YFS-71-tbb" secondAttribute="bottom" constant="15" id="RHG-ih-vDo"/>
+                            <constraint firstItem="hvb-xR-MfX" firstAttribute="top" secondItem="JXn-bI-mmt" secondAttribute="bottom" constant="10" id="aju-vw-EbC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2zF-Rx-sGE" secondAttribute="bottom" constant="15" id="c3V-jr-rhb"/>
+                            <constraint firstItem="YFS-71-tbb" firstAttribute="top" secondItem="jNV-hc-OEa" secondAttribute="bottom" constant="10" id="gFr-B0-dr7"/>
+                            <constraint firstItem="2zF-Rx-sGE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="hJP-Hh-sDP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VUG-w2-giq" secondAttribute="trailing" id="jOe-Qu-NAY"/>
+                            <constraint firstItem="YFS-71-tbb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="jfa-EP-zHT"/>
+                            <constraint firstItem="jNV-hc-OEa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="jpM-Bz-5MM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JXn-bI-mmt" secondAttribute="trailing" constant="10" id="lbs-uZ-cev"/>
+                            <constraint firstItem="VUG-w2-giq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mbd-u4-gAB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBack" destination="edd-Pf-Nou" id="4k4-Nn-81C"/>
+                        <outlet property="buttonCreatePost" destination="2zF-Rx-sGE" id="3Ib-hJ-28B"/>
+                        <outlet property="labelCreatePost" destination="Wir-LN-0Sp" id="v9A-7C-kjZ"/>
+                        <outlet property="labelPostContent" destination="JXn-bI-mmt" id="E6p-Ad-xiy"/>
+                        <outlet property="labelPostTitle" destination="jNV-hc-OEa" id="089-3g-MDL"/>
+                        <outlet property="navigationView" destination="VUG-w2-giq" id="HIO-MP-4xo"/>
+                        <outlet property="textfieldPostContent" destination="hvb-xR-MfX" id="cd4-Ug-tgk"/>
+                        <outlet property="textfieldPostTitle" destination="YFS-71-tbb" id="eeh-v1-6wX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

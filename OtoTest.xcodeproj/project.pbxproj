@@ -27,6 +27,8 @@
 		138B01892797C116008F558A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01882797C116008F558A /* Post.swift */; };
 		138B01932797D52C008F558A /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B01912797D52C008F558A /* Post.storyboard */; };
 		138B01942797D52C008F558A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01922797D52C008F558A /* PostViewController.swift */; };
+		138B01992797E338008F558A /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01982797E338008F558A /* CreatePostViewController.swift */; };
+		138B019B2797E35D008F558A /* CreatePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B019A2797E35D008F558A /* CreatePost.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		138B01882797C116008F558A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		138B01912797D52C008F558A /* Post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		138B01922797D52C008F558A /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		138B01982797E338008F558A /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		138B019A2797E35D008F558A /* CreatePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatePost.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 		138B016B2797B73B008F558A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				138B01962797E2FB008F558A /* Create */,
 				138B018B2797C5EA008F558A /* Post */,
 				138B016C2797B741008F558A /* ListPost */,
 			);
@@ -264,6 +269,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		138B01962797E2FB008F558A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				138B01972797E31A008F558A /* View */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		138B01972797E31A008F558A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				138B01982797E338008F558A /* CreatePostViewController.swift */,
+				138B019A2797E35D008F558A /* CreatePost.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138B019B2797E35D008F558A /* CreatePost.storyboard in Resources */,
 				138B016E2797B776008F558A /* ListPost.storyboard in Resources */,
 				138B01482797B67D008F558A /* LaunchScreen.storyboard in Resources */,
 				138B01932797D52C008F558A /* Post.storyboard in Resources */,
@@ -401,6 +424,7 @@
 				138B01812797C06B008F558A /* WebService.swift in Sources */,
 				138B01702797B995008F558A /* ListPostViewController.swift in Sources */,
 				138B01892797C116008F558A /* Post.swift in Sources */,
+				138B01992797E338008F558A /* CreatePostViewController.swift in Sources */,
 				138B017D2797C04A008F558A /* LoadingScreen.swift in Sources */,
 				138B01392797B67B008F558A /* AppDelegate.swift in Sources */,
 				138B01432797B67B008F558A /* OtoTest.xcdatamodeld in Sources */,

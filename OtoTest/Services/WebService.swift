@@ -33,4 +33,16 @@ final class Webservice {
         
     }
     
+    func loadPOST(resource: URLRequest,completion: @escaping (Foundation.Data?) -> ()) {
+      URLSession.shared.dataTask(with: resource) { data, response, error in
+        if let data = data {
+          DispatchQueue.main.async {
+            completion(data)
+          }
+        } else {
+          completion(nil)
+        }
+      }.resume()
+    }
+    
 }

@@ -15,17 +15,27 @@ class ListPostViewController : UIViewController{
     @IBOutlet weak var addPostButton: UIButton!
     
     @IBAction func addPostButtonPressed(_ sender: Any) {
+        self.isEdit = false
+        self.performSegue(withIdentifier: "goToCreatePost", sender: ListPostViewController.self)
         
     }
     var listPostVM = ListPostViewModel()
     var selectedIndex : Int = 0
+    var isEdit : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllPost()
-        LoadingScreen.sharedInstance.showIndicator()
-        
         setupTableView()
+        setUINavigation()
+    }
+    
+    func setUINavigation(){
+        navigationView.backgroundColor = UIColor.white
+        navigationView.layer.shadowColor = UIColor.gray.cgColor
+        navigationView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        navigationView.layer.shadowRadius = 1
+        navigationView.layer.shadowOpacity = 5
     }
     
     func setupTableView(){
@@ -36,6 +46,9 @@ class ListPostViewController : UIViewController{
     }
     
     func getAllPost(){
+        
+        LoadingScreen.sharedInstance.showIndicator()
+        
         listPostVM.getAllPost { _ in
             DispatchQueue.main.async {
                 self.listPosttableView.reloadData()
@@ -52,6 +65,15 @@ class ListPostViewController : UIViewController{
                 let listPostVM = listPostVM.modelAt(self.selectedIndex)
                 destVC.postData = listPostVM.item
             }
+        }else if segue.identifier == "goToCreatePost"{
+            //you can edit or create data here
+            if let destVC = segue.destination as? CreatePostViewController {
+                destVC.lastCount = listPostVM.numberOfRows(0) + 1
+                destVC.isEdit = self.isEdit
+                destVC.postVM = listPostVM.modelAt(selectedIndex)
+                destVC.delegate = self
+                  
+            }
         }
     }
     
@@ -61,6 +83,7 @@ class ListPostViewController : UIViewController{
 
 extension ListPostViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("JUMLAH DATA : \(listPostVM.numberOfRows(section))")
         return listPostVM.numberOfRows(section)
     }
     
@@ -83,8 +106,15 @@ extension ListPostViewController : UITableViewDelegate, UITableViewDataSource{
         let delete = UIContextualAction(style: .normal,
                                          title: "Delete") { [weak self] (action, view, completionHandler) in
 
-            if let deletePost = self?.listPostVM.modelAt(indexPath.row){
+            if let deletePostVM = self?.listPostVM.modelAt(indexPath.row){
                 print("DELETED")
+                
+                deletePostVM.deleteData(title: deletePostVM.item.title, content: deletePostVM.item.content, id: "\(deletePostVM.item.id)", completion: { PostViewModel in
+                    DispatchQueue.main.async {
+                        self?.getAllPost()
+                    }
+                   
+                })
             }
             
             
@@ -101,10 +131,52 @@ extension ListPostViewController : UITableViewDelegate, UITableViewDataSource{
         return configuration
     }
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let edit = UIContextualAction(style: .normal,
+                                         title: "Edit") { [weak self] (action, view, completionHandler) in
+            
+            print("EDIT DATA \(indexPath.row)")
+            //update data status
+            self?.selectedIndex = indexPath.row
+            self?.isEdit = true
+            self?.performSegue(withIdentifier: "goToCreatePost", sender: self)
+            
+            
+            completionHandler(true)
+        }
+        
+        edit.image = UIImage(systemName: "pencil")?.withTintColor(.white)
+        edit.backgroundColor = UIColor.systemGreen
+        
+        
+        
+        let configuration = UISwipeActionsConfiguration(actions: [edit])
+
+        return configuration
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
         
         self.performSegue(withIdentifier: "goToPostDetail", sender: ListPostViewController.self)
+    }
+    
+    
+}
+
+
+extension ListPostViewController : ReloadPostDataDelegate{
+    func reloadDataAfterEditOrAdd() {
+        print("ADD DATA BARU : \(selectedIndex)")
+        getAllPost()
+        DispatchQueue.main.async {
+            
+//            print("DATA UPDATE : \(self.listPostVM.modelAt(self.selectedIndex).item.id) \(self.listPostVM.modelAt(self.selectedIndex).item.title)")
+            
+            
+            
+        }
     }
     
     

@@ -14,6 +14,10 @@ struct Constants {
         static func urlForGetAllPost() -> URL {
             return URL(string: "https://limitless-forest-49003.herokuapp.com/posts")!
         }
+        
+        static func urlForUpdateDelete(id: String) -> URL {
+            return URL(string: "https://limitless-forest-49003.herokuapp.com/posts/\(id)")!
+        }
     }
         
 }
