@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		138B01392797B67B008F558A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01382797B67B008F558A /* AppDelegate.swift */; };
+		138B013B2797B67B008F558A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B013A2797B67B008F558A /* SceneDelegate.swift */; };
+		138B013D2797B67B008F558A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B013C2797B67B008F558A /* ViewController.swift */; };
+		138B01402797B67B008F558A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B013E2797B67B008F558A /* Main.storyboard */; };
+		138B01432797B67B008F558A /* OtoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 138B01412797B67B008F558A /* OtoTest.xcdatamodeld */; };
+		138B01452797B67D008F558A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138B01442797B67D008F558A /* Assets.xcassets */; };
+		138B01482797B67D008F558A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B01462797B67D008F558A /* LaunchScreen.storyboard */; };
+		138B01532797B67D008F558A /* OtoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B01522797B67D008F558A /* OtoTestTests.swift */; };
+		138B015D2797B67D008F558A /* OtoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B015C2797B67D008F558A /* OtoTestUITests.swift */; };
+		138B015F2797B67D008F558A /* OtoTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		138B014F2797B67D008F558A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 138B012D2797B67B008F558A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138B01342797B67B008F558A;
+			remoteInfo = OtoTest;
+		};
+		138B01592797B67D008F558A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 138B012D2797B67B008F558A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138B01342797B67B008F558A;
+			remoteInfo = OtoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		138B01352797B67B008F558A /* OtoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		138B01382797B67B008F558A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		138B013A2797B67B008F558A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		138B013C2797B67B008F558A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		138B013F2797B67B008F558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		138B01422797B67B008F558A /* OtoTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OtoTest.xcdatamodel; sourceTree = "<group>"; };
+		138B01442797B67D008F558A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		138B01472797B67D008F558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		138B01492797B67D008F558A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138B014E2797B67D008F558A /* OtoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		138B01522797B67D008F558A /* OtoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtoTestTests.swift; sourceTree = "<group>"; };
+		138B01582797B67D008F558A /* OtoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		138B015C2797B67D008F558A /* OtoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtoTestUITests.swift; sourceTree = "<group>"; };
+		138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtoTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		138B01322797B67B008F558A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B014B2797B67D008F558A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B01552797B67D008F558A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		138B012C2797B67B008F558A = {
+			isa = PBXGroup;
+			children = (
+				138B01372797B67B008F558A /* OtoTest */,
+				138B01512797B67D008F558A /* OtoTestTests */,
+				138B015B2797B67D008F558A /* OtoTestUITests */,
+				138B01362797B67B008F558A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		138B01362797B67B008F558A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				138B01352797B67B008F558A /* OtoTest.app */,
+				138B014E2797B67D008F558A /* OtoTestTests.xctest */,
+				138B01582797B67D008F558A /* OtoTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		138B01372797B67B008F558A /* OtoTest */ = {
+			isa = PBXGroup;
+			children = (
+				138B01382797B67B008F558A /* AppDelegate.swift */,
+				138B013A2797B67B008F558A /* SceneDelegate.swift */,
+				138B013C2797B67B008F558A /* ViewController.swift */,
+				138B013E2797B67B008F558A /* Main.storyboard */,
+				138B01442797B67D008F558A /* Assets.xcassets */,
+				138B01462797B67D008F558A /* LaunchScreen.storyboard */,
+				138B01492797B67D008F558A /* Info.plist */,
+				138B01412797B67B008F558A /* OtoTest.xcdatamodeld */,
+			);
+			path = OtoTest;
+			sourceTree = "<group>";
+		};
+		138B01512797B67D008F558A /* OtoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				138B01522797B67D008F558A /* OtoTestTests.swift */,
+			);
+			path = OtoTestTests;
+			sourceTree = "<group>";
+		};
+		138B015B2797B67D008F558A /* OtoTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				138B015C2797B67D008F558A /* OtoTestUITests.swift */,
+				138B015E2797B67D008F558A /* OtoTestUITestsLaunchTests.swift */,
+			);
+			path = OtoTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		138B01342797B67B008F558A /* OtoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138B01622797B67D008F558A /* Build configuration list for PBXNativeTarget "OtoTest" */;
+			buildPhases = (
+				138B01312797B67B008F558A /* Sources */,
+				138B01322797B67B008F558A /* Frameworks */,
+				138B01332797B67B008F558A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtoTest;
+			productName = OtoTest;
+			productReference = 138B01352797B67B008F558A /* OtoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		138B014D2797B67D008F558A /* OtoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138B01652797B67D008F558A /* Build configuration list for PBXNativeTarget "OtoTestTests" */;
+			buildPhases = (
+				138B014A2797B67D008F558A /* Sources */,
+				138B014B2797B67D008F558A /* Frameworks */,
+				138B014C2797B67D008F558A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138B01502797B67D008F558A /* PBXTargetDependency */,
+			);
+			name = OtoTestTests;
+			productName = OtoTestTests;
+			productReference = 138B014E2797B67D008F558A /* OtoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		138B01572797B67D008F558A /* OtoTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138B01682797B67D008F558A /* Build configuration list for PBXNativeTarget "OtoTestUITests" */;
+			buildPhases = (
+				138B01542797B67D008F558A /* Sources */,
+				138B01552797B67D008F558A /* Frameworks */,
+				138B01562797B67D008F558A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138B015A2797B67D008F558A /* PBXTargetDependency */,
+			);
+			name = OtoTestUITests;
+			productName = OtoTestUITests;
+			productReference = 138B01582797B67D008F558A /* OtoTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		138B012D2797B67B008F558A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					138B01342797B67B008F558A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					138B014D2797B67D008F558A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 138B01342797B67B008F558A;
+					};
+					138B01572797B67D008F558A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 138B01342797B67B008F558A;
+					};
+				};
+			};
+			buildConfigurationList = 138B01302797B67B008F558A /* Build configuration list for PBXProject "OtoTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 138B012C2797B67B008F558A;
+			productRefGroup = 138B01362797B67B008F558A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				138B01342797B67B008F558A /* OtoTest */,
+				138B014D2797B67D008F558A /* OtoTestTests */,
+				138B01572797B67D008F558A /* OtoTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		138B01332797B67B008F558A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138B01482797B67D008F558A /* LaunchScreen.storyboard in Resources */,
+				138B01452797B67D008F558A /* Assets.xcassets in Resources */,
+				138B01402797B67B008F558A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B014C2797B67D008F558A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B01562797B67D008F558A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138B01312797B67B008F558A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138B013D2797B67B008F558A /* ViewController.swift in Sources */,
+				138B01392797B67B008F558A /* AppDelegate.swift in Sources */,
+				138B01432797B67B008F558A /* OtoTest.xcdatamodeld in Sources */,
+				138B013B2797B67B008F558A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B014A2797B67D008F558A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138B01532797B67D008F558A /* OtoTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B01542797B67D008F558A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138B015D2797B67D008F558A /* OtoTestUITests.swift in Sources */,
+				138B015F2797B67D008F558A /* OtoTestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		138B01502797B67D008F558A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138B01342797B67B008F558A /* OtoTest */;
+			targetProxy = 138B014F2797B67D008F558A /* PBXContainerItemProxy */;
+		};
+		138B015A2797B67D008F558A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138B01342797B67B008F558A /* OtoTest */;
+			targetProxy = 138B01592797B67D008F558A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		138B013E2797B67B008F558A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				138B013F2797B67B008F558A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		138B01462797B67D008F558A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				138B01472797B67D008F558A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		138B01602797B67D008F558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		138B01612797B67D008F558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		138B01632797B67D008F558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P49UTYHH6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OtoTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.infinitelearning.OtoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		138B01642797B67D008F558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P49UTYHH6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OtoTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.infinitelearning.OtoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		138B01662797B67D008F558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P49UTYHH6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.infinitelearning.OtoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtoTest.app/OtoTest";
+			};
+			name = Debug;
+		};
+		138B01672797B67D008F558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P49UTYHH6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.infinitelearning.OtoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtoTest.app/OtoTest";
+			};
+			name = Release;
+		};
+		138B01692797B67D008F558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P49UTYHH6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.infinitelearning.OtoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OtoTest;
+			};
+			name = Debug;
+		};
+		138B016A2797B67D008F558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P49UTYHH6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.infinitelearning.OtoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OtoTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		138B01302797B67B008F558A /* Build configuration list for PBXProject "OtoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138B01602797B67D008F558A /* Debug */,
+				138B01612797B67D008F558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138B01622797B67D008F558A /* Build configuration list for PBXNativeTarget "OtoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138B01632797B67D008F558A /* Debug */,
+				138B01642797B67D008F558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138B01652797B67D008F558A /* Build configuration list for PBXNativeTarget "OtoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138B01662797B67D008F558A /* Debug */,
+				138B01672797B67D008F558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138B01682797B67D008F558A /* Build configuration list for PBXNativeTarget "OtoTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138B01692797B67D008F558A /* Debug */,
+				138B016A2797B67D008F558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		138B01412797B67B008F558A /* OtoTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				138B01422797B67B008F558A /* OtoTest.xcdatamodel */,
+			);
+			currentVersion = 138B01422797B67B008F558A /* OtoTest.xcdatamodel */;
+			path = OtoTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 138B012D2797B67B008F558A /* Project object */;
+}
